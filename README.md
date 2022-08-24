@@ -6,5 +6,5 @@
 <p>The plan is to access some open APIs from here. Maybe crypto prices or the weather.</p>
 <p>This is a second change. Testing out Git Desktop</p>
 <p></p>
-<p>If interested in this domain, please contact G3CXM@protonmail.com</p>
-</html>
+<p>G3CXM@protonmail.com</p>
+
