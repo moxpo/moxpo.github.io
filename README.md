@@ -6,4 +6,3 @@
 <p>The plan is to access some open APIs from here. Maybe crypto prices or the weather.</p>
 <p>This is a second change. Testing out Git Desktop</p>
 </html>
-
