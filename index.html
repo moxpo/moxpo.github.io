@@ -10,6 +10,30 @@
 		<h1>Welcome to TOI-1452 b</h1>
 		<p>The purpose of this website is to practise HTML and coding.</p>
 		<p></p>
+		
+		<div class="weatherWidget" ></div>
+
+<script>
+   window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
+   window.weatherWidgetConfig.push({
+       selector:".weatherWidget",
+       apiKey:"YOUR_API_KEY", //Sign up for your personal key
+       location:"London, UK", //Enter an address
+       unitGroup:"metric", //"us" or "metric"
+       forecastDays:5, //how many days forecast to show
+       title:"London,UK", //optional title to show in the 
+       showTitle:true, 
+       showConditions:true
+   });
+  
+   (function() {
+   var d = document, s = d.createElement('script');
+   s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
+   s.setAttribute('data-timestamp', +new Date());
+   (d.head || d.body).appendChild(s);
+   })();
+</script>
+		
 		<p>Just a simple edit to see if things are updating, Learnt a bit about DNS getting this domain forwarded to GitHub pages</p>
 		<p>Nice, SSL certificate enabled. Thank you GitHub pages. Some HTML formating to come.</p>
 		<p>Unable to live edit. Save/Refresh required.</p>
