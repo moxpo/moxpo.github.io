@@ -1,16 +1,9 @@
 let topButton = document.getElementById("backToTop");
 
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    topButton.style.display = "block";
-  } else {
-    topButton.style.display = "none";
-  }
+window.onscroll = () => {
+  topButton.style.display = document.documentElement.scrollTop > 20 ? "block" : "none";
 }
 
 topButton.onclick = function() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  window.scrollTo({top: 0, behavior: 'smooth'}); // Smooth scrolling
 }
